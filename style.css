@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    padding: 30px 15px;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+h3 {
+    margin: 20px 0 10px;
+    color: #444;
+    font-size: 1.1rem;
+}
+
+/* Card Saldo */
+.balance-card {
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.balance-card h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.summary-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.summary-item p {
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.income p { color: #2ecc71; }
+.expense p { color: #e74c3c; }
+
+/* Form */
+.form-group {
+    margin-bottom: 12px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background-color: #219150;
+}
+
+/* Daftar Transaksi */
+.transaction-list {
+    list-style: none;
+}
+
+.transaction-list li {
+    background-color: #fff;
+    border: 1px solid #eee;
+    border-left: 5px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.transaction-list li.plus { border-left-color: #2ecc71; }
+.transaction-list li.minus { border-left-color: #e74c3c; }
+
+.delete-btn {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
